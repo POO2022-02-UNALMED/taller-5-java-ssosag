@@ -7,20 +7,21 @@ public class Ave extends Animal{
 	public static int halcones;
 	public static int aguilas;
 	private String colorPlumas;
+	public static int nAves;
 	
 	public Ave (String nombre, int edad, String habitat, String genero,
 			String colorPlumas) {
 		super(nombre, edad, habitat, genero);
 		this.colorPlumas = colorPlumas;
-		listado.add(this);
+		nAves++;
 	}
 	
 	public Ave () {
-		
+		nAves++;
 	}
 	
 	public static int cantidadAves() {
-		return listado.size();
+		return nAves;
 	}
 	
 	public String movimiento() {

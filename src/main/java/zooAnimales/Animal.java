@@ -39,7 +39,7 @@ public class Animal {
 		String cadena = "Mi nombre es " + this.nombre +
 				", tengo una edad de " + this.edad + 
 				", habito en " + this.habitat +
-				"y mi genero es " + this.genero;
+				" y mi genero es " + this.genero;
 		if (this.zona != null) {
 			String cadenaCompleta = cadena + 
 					", la zona en la que me ubico es " + this.zona.getNombre() +
