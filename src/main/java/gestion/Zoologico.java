@@ -4,16 +4,17 @@ import java.util.ArrayList;
 public class Zoologico {
 	private String nombre;
 	private String ubicacion;
-	private static ArrayList<Zona> zonas;
+	private  ArrayList<Zona> zonas;
 	
 	public Zoologico (String nombre, String ubicacion) {
 		this.setNombre(nombre);
 		this.setUbicacion(ubicacion);
+		zonas = new ArrayList<Zona>();
 
 	}
 	
 	public Zoologico () {
-		
+		zonas = new ArrayList<Zona>();
 	}
 	
 	public void agregarZonas (Zona zona) {
@@ -46,13 +47,13 @@ public class Zoologico {
 		this.ubicacion = ubicacion;
 	}
 
-	public static ArrayList<Zona> getZona() {
+	public ArrayList<Zona> getZona() {
 		return zonas;
 	}
 
-	public static void setZonas(ArrayList<Zona> zonas) {
-		Zoologico.zonas = zonas;
+	public void setZonas(ArrayList<Zona> zonas) {
+		this.zonas = zonas;
 	}
-	
+
 }
 
